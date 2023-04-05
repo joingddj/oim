@@ -1,0 +1,318 @@
+body, html {
+    height: 100%
+}
+
+.gray {
+    -webkit-filter: grayscale(100%); /*兼容google、opera*/
+    -moz-filter: grayscale(100%); /*FF下不生效*/
+    -ms-filter: grayscale(100%); /*IE下不生效*/
+    -o-filter: grayscale(100%); /*opera下不生效*/
+
+    filter: grayscale(100%); /*无效*/
+    filter: gray; /*兼容IE7-IE9，IE10不支持*/
+}
+
+
+/*******************************/
+
+.red-dot-middle {
+    height: 22px;
+    width: 22px;
+    padding: 3px;
+    /*margin:10px auto;*/
+    background-color: #dc3535;
+    border-radius: 50%/50%;
+}
+
+
+/**************列表 begin******************/
+.list-root-pane {
+    height: 100%
+}
+
+.list-node-pane > .title {
+    /*position: relative;*/
+    height: 32px;
+    line-height: 42px;
+    padding: 0 15px 0 15px;
+    color: #333;
+    cursor: pointer;
+    /*background-color: #f2f2f2;*/
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.list-node-pane > .title > i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.list-node-pane > .title:hover {
+    background: rgba(186, 186, 186, 0.5);
+}
+
+.list-node-item {
+    /*height: 65px;*/
+    overflow: hidden;
+    padding: 12px 12px 0px;
+    border-bottom: 1px solid #e7e7e7;
+    cursor: pointer;
+    position: relative
+}
+
+/*.list-node-item.active {*/
+/*    background: #d2d2d2*/
+/*}*/
+
+.list-node-item:hover {
+    background: rgba(230, 229, 239, 0.3);
+}
+
+
+.list-node-item.active > .center .text .ext {
+    color: #fff
+}
+
+.list-node-item > .avatar {
+    float: left;
+    margin-right: 10px;
+    position: relative
+}
+
+.list-node-item > .avatar > img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.list-node-item > .avatar > .icon {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    color: #fff;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center
+}
+
+.list-node-item > .center {
+    /*background-color: #81c784;*/
+}
+
+.list-node-item > .center > .nickname {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    line-height: 20px
+}
+
+.list-node-item > .center .nickname-text {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal
+}
+
+.list-node-item > .center, .list-node-item > .center > .nickname-text {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top
+}
+
+.list-node-item > .center .text {
+    color: #989898;
+    font-size: 13px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    height: 1.5em
+}
+
+.list-node-item > .ext {
+    float: right;
+    color: #6b6f7c;
+    font-size: 13px;
+    text-align: right
+}
+
+.list-node-item > .ext > .attr {
+    height: 19px;
+    line-height: 1.5
+}
+
+/*************************************/
+
+.user-info-card-top {
+    height: 145px;
+    text-align: center;
+    /*background-color: #1abc9c;*/
+    background-color: rgba(120, 120, 255, 0.7);
+    overflow: hidden;
+}
+
+.user-info-card-head {
+    width: 100%;
+    margin-top: -50px;
+    text-align: center;
+    /*position: absolute;*/
+    z-index: 10;
+    overflow: hidden;
+}
+
+.user-info-card-name-text {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*width: 110px;*/
+}
+
+.user-info-card-detail {
+    /*margin-top: 100px;*/
+    overflow: hidden;
+}
+
+
+/*************************************/
+.page-pane {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page-list-pane {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 56px;
+}
+
+.page-list {
+    -webkit-overflow-scrolling: touch;
+}
+
+/******/
+.contact-pane {
+    width: 100%;
+    height: 100%;
+    /*overflow-y: auto;*/
+    padding-bottom: 56px;
+}
+
+.contact-list-pane {
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-list {
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/**********************/
+.common-main-scroll-pane {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.common-main-scroll-pane::-webkit-scrollbar {
+    display: none;
+}
+
+/**************/
+.common-full-pane {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.common-full-pane > .top {
+    position: absolute;
+    height: 50px;
+    max-height: 50px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.common-full-pane > .center {
+    position: absolute;
+    top: 50px;
+    bottom: 48px;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*.common-full-pane > .center::-webkit-scrollbar {*/
+/*    display: none;*/
+/*}*/
+
+.common-full-pane > .bottom {
+    position: absolute;
+    height: 48px;
+    max-height: 48px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/*********************/
+.popup {
+    position: absolute;
+    background-color: #fff;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    outline: none
+}
+
+
+.message-prompt {
+    top: 50px;
+    margin-top: 1px;
+    box-shadow: 1px 1px 1px #e0e0e0;
+    -moz-box-shadow: 1px 1px 1px #e0e0e0;
+    -webkit-box-shadow: 1px 1px 1px #e0e0e0;
+    width: 100%
+}
+
+.slide-down {
+    transition: all 0 cubic-bezier(.25, .46, .45, .94);
+    transition-timing-function: cubic-bezier(.25, .46, .45, .94)
+}
+
+
+.message-prompt-pane {
+    padding: 10px 4px 8px 17px;
+    background-color: #eee;
+    border-bottom: 1px solid #dedede
+}
+
+.message-prompt-inner {
+    margin-right: -4px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.members_inner:after {
+    content: "";
+    display: block;
+    clear: both
+}

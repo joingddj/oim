@@ -1,0 +1,85 @@
+
+.chat-pane {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+.chat-pane > .center {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 48px;
+    left: 0;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*.chat-pane > .center::-webkit-scrollbar {*/
+/*    display: none;*/
+/*}*/
+
+/*.chat-pane > .center:hover ::-webkit-scrollbar {*/
+/*    display: block;*/
+/*}*/
+
+
+.chat-pane > .message-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.chat-pane > .bottom {
+    min-height: 48px;
+    width: 100%;
+    border-top: 1px solid #d6d6d6;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #eee;
+}
+
+.chat-pane > .bottom > .button-microphone {
+    width: 30px;
+    height: 30px;
+    color: #aaa;
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: 1.3em;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin: 8px;
+}
+
+.chat-pane > .bottom > .button-microphone > i {
+    margin: 0;
+}
+
+
+.chat-pane > .bottom > .button-send {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 60px;
+}
+
+.chat-pane > .bottom > .message-input {
+    width: calc(100% - 130px);
+    height: 30px;
+    position: absolute;
+    top: 9px;
+    left: 50px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #aaa;
+    margin: 0;
+    padding: 0;
+}
+
