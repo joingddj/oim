@@ -1,0 +1,58 @@
+*.class
+*.log
+/bin
+/logs
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
+# Eclipse #
+.classpath
+.project
+.externalToolBuilders/
+.metadata
+.settings
+.myeclipse
+
+
+# Maven #
+/target/
+
+# BlueJ files
+*.ctxt
+
+# IntelliJ #
+*.iml
+*.ipr
+*.iws
+.idea
+/out/
+
+
+# NetBeans #
+nbproject
+build
+build.xml
+manifest.mf
+
+# Mac #
+.DS_Store
+._*
+
+# OIM #
+/Config/
+/DB/
+/Temp/*
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/target/
