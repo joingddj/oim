@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viewer</title>
+    <link rel="stylesheet" href="js/lib/viewer/viewer.min.css">
+    <script src="js/lib/viewer/viewer.min.js"></script>
+</head>
+<body>
+<div id="show" style="display: none">
+    <ul class="pictures">
+        <li><img id="1" data-original="images/tibet-1.jpg" src="images/tibet-1.jpg" alt="Cuo Na Lake"></li>
+        <li><img id="2" data-original="images/tibet-2.jpg" src="images/tibet-1.jpg" alt="Tibetan Plateau"></li>
+    </ul>
+</div>
+
+</body>
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        var image = new Image();
+
+        var node = document.getElementById('show');
+
+        var viewer = new Viewer(node, {
+            hidden: function () {
+                // viewer.destroy();
+            },
+            backdrop: 'static',
+            fullscreen: true,
+            button: false,
+        });
+        var v = document.getElementById('2');
+        v.click();
+        // image.click();
+        // viewer.show();
+    });
+    window.webBridge = function () {
+
+    }
+</script>
+</html>

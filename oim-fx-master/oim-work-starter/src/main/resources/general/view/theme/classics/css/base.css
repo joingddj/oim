@@ -1,0 +1,99 @@
+.root {
+	-fx-background-color: null;
+	-only-base-theme-color: #6677fb;
+}
+
+/******************************************************************************
+ *                                                                            *
+ * WindowButton                                                               *
+ *                                                                            *
+ ******************************************************************************/
+
+/**最小化**/
+.window-min {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-min>.image-view {
+	-fx-image: url("../images/common/window/window_min_dark_normal.png");
+}
+
+.window-min:focused>.image-view {
+	-fx-image: url("../images/common/window/window_min_dark_normal.png");
+}
+
+.window-min:hover>.image-view {
+	-fx-image: url("../images/common/window/window_min_dark_hover.png");
+}
+
+.window-min:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_min_dark_press.png");
+}
+
+/**最大化**/
+.window-max {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-max>.image-view {
+	-fx-image: url("../images/common/window/window_max_dark_normal.png");
+}
+
+.window-max:focused>.image-view {
+	-fx-image: url("../images/common/window/window_max_dark_normal.png");
+}
+
+.window-max:hover>.image-view {
+	-fx-image: url("../images/common/window/window_max_dark_hover.png");
+}
+
+.window-max:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_max_dark_press.png");
+}
+
+/**还原**/
+.window-restore {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-restore>.image-view {
+	-fx-image: url("../images/common/window/window_restore_dark_normal.png");
+}
+
+.window-restore:focused>.image-view {
+	-fx-image: url("../images/common/window/window_restore_dark_normal.png");
+}
+
+.window-restore:hover>.image-view {
+	-fx-image: url("../images/common/window/window_restore_dark_hover.png");
+}
+
+.window-restore:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_restore_dark_press.png");
+}
+
+/**关闭 */
+.window-close {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-close>.image-view {
+	-fx-image: url("../images/common/window/window_close_dark_normal.png");
+}
+
+.window-close:focused>.image-view {
+	-fx-image: url("../images/common/window/window_close_dark_normal.png");
+}
+
+.window-close:hover>.image-view {
+	-fx-image: url("../images/common/window/window_close_dark_hover.png");
+}
+
+.window-close:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_close_dark_press.png");
+}
+

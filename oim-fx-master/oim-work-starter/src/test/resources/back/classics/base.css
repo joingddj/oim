@@ -1,0 +1,357 @@
+.root {
+	-fx-background-color: null;
+	-only-base-theme-color: #6677fb;
+}
+
+/******************************************************************************
+ *                                                                            *
+ * WindowButton                                                               *
+ *                                                                            *
+ ******************************************************************************/
+
+/**最小化**/
+.window-min {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-min>.image-view {
+	-fx-image: url("../images/common/window/window_min_dark_normal.png");
+}
+
+.window-min:focused>.image-view {
+	-fx-image: url("../images/common/window/window_min_dark_normal.png");
+}
+
+.window-min:hover>.image-view {
+	-fx-image: url("../images/common/window/window_min_dark_hover.png");
+}
+
+.window-min:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_min_dark_press.png");
+}
+
+/**最大化**/
+.window-max {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-max>.image-view {
+	-fx-image: url("../images/common/window/window_max_dark_normal.png");
+}
+
+.window-max:focused>.image-view {
+	-fx-image: url("../images/common/window/window_max_dark_normal.png");
+}
+
+.window-max:hover>.image-view {
+	-fx-image: url("../images/common/window/window_max_dark_hover.png");
+}
+
+.window-max:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_max_dark_press.png");
+}
+
+/**还原**/
+.window-restore {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-restore>.image-view {
+	-fx-image: url("../images/common/window/window_restore_dark_normal.png");
+}
+
+.window-restore:focused>.image-view {
+	-fx-image: url("../images/common/window/window_restore_dark_normal.png");
+}
+
+.window-restore:hover>.image-view {
+	-fx-image: url("../images/common/window/window_restore_dark_hover.png");
+}
+
+.window-restore:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_restore_dark_press.png");
+}
+
+/**关闭 */
+.window-close {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-close>.image-view {
+	-fx-image: url("../images/common/window/window_close_dark_normal.png");
+}
+
+.window-close:focused>.image-view {
+	-fx-image: url("../images/common/window/window_close_dark_normal.png");
+}
+
+.window-close:hover>.image-view {
+	-fx-image: url("../images/common/window/window_close_dark_hover.png");
+}
+
+.window-close:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_close_dark_press.png");
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ScrollBar                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+.scroll-bar:horizontal {
+	/* -fx-min-height: 20.0px;
+	-fx-pref-height: 20.0px; */
+	-fx-background-color: null;
+}
+
+.scroll-bar:vertical {
+	/* -fx-min-width: 30.0px;
+	-fx-pref-width: 30.0px; */
+	-fx-background-color: null;
+}
+
+/* .scroll-bar:focused {
+	
+}
+
+.scroll-bar:vertical:focused {
+	
+} */
+.scroll-bar>.thumb {
+	-fx-background-radius: 8;
+	-fx-background-color: rgba(120.0, 120.0, 120.0, 0.8);
+}
+
+.scroll-bar>.thumb:hover {
+	-fx-background-color: rgba(90.0, 90.0, 90.0, 0.8);
+}
+
+.scroll-bar>.thumb:pressed {
+	-fx-background-color: rgba(70.0, 70.0, 70.0, 0.8);
+}
+
+.scroll-bar:vertical>.thumb {
+	-fx-background-radius: 8;
+	-fx-background-color: rgba(120.0, 120.0, 120.0, 0.8);
+}
+
+.scroll-bar:horizontal>.thumb {
+	-fx-background-radius: 8;
+	-fx-background-color: rgba(120.0, 120.0, 120.0, 0.8);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ScrollPane                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+.scroll-pane>.scroll-bar:horizontal>.increment-button, .scroll-pane>.scroll-bar:horizontal>.decrement-button
+	{
+	-fx-background-color: rgba(1.0, 1.0, 1.0, 0.1);
+}
+
+.scroll-pane>.scroll-bar:horizontal>.increment-button:hover,
+	.scroll-pane>.scroll-bar:horizontal>.decrement-button:hover {
+	-fx-background-color: rgba(1.0, 1.0, 1.0, 0.1);
+}
+
+.scroll-pane>.scroll-bar:vertical>.increment-button, .scroll-pane>.scroll-bar:vertical>.decrement-button
+	{
+	-fx-background-color: rgba(1.0, 1.0, 1.0, 0.1);
+}
+
+.scroll-pane>.scroll-bar:vertical>.increment-button, .scroll-pane>.scroll-bar:vertical>.decrement-button
+	{
+	-fx-background-color: rgba(1.0, 1.0, 1.0, 0.1);
+}
+
+/******************************************************************************
+ *                                                                            *
+ * Button                                                                     *
+ *                                                                            *
+ ******************************************************************************/
+.primary-button {
+	-fx-background-color: -fx-selection-bar;
+}
+
+.primary-button:focused {
+	-fx-background-color: -fx-selection-bar-non-focused;
+}
+
+.primary-button:hover {
+	-fx-background-color: -fx-background;
+}
+
+.primary-button:pressed {
+	-fx-background-color: -fx-cell-focus-inner-border;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ToggleButton                                                                *
+ *                                                                             *
+ ******************************************************************************/
+.toggle-button {
+	-fx-background-color: #38b9f4;
+	-fx-background-radius: 0;
+	-fx-text-fill: white;
+	-fx-background-radius: 3;
+}
+
+.toggle-button:hover {
+	-fx-background-radius: 3;
+}
+
+.toggle-button:focused {
+	-fx-background-radius: 3;
+}
+
+.toggle-button:disabled {
+	-fx-background-radius: 3;
+}
+
+.toggle-button:pressed {
+	-fx-background-radius: 3;
+}
+
+.toggle-button:selected {
+	-fx-background-radius: 3;
+}
+
+.toggle-button:selected:focused {
+	-fx-background-radius: 3;
+}
+
+/******************************************************************************
+ *                                                                            *
+ * TextField                                                                  *
+ *                                                                            *
+ ******************************************************************************/
+
+
+/******************************/
+.separator {
+	/*-fx-background-color:null;*/
+	-fx-background-insets: 1, 0 0 0 0;
+}
+
+.separator>.line {
+	-fx-background-color: null;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ListView                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+
+
+/******************************************************************************
+ *                                                                            *
+ * Menu                                                                       *
+ *                                                                            *
+ ******************************************************************************/
+.context-menu {
+	/*-fx-background-image:url( ../images/menu/menu_background.png);*/
+	/*-fx-background-color: #858686;*/
+	-fx-min-width: 140px;
+	-fx-padding: 8 0 8 0;
+	-fx-spacing: 3;
+	-fx-background-width: 25.0;
+	-fx-background-color: rgba(255.0, 255.0, 255.0, 0.8);
+	-fx-background-radius: 3.0px;
+	-fx-background-insets: 0.0 0.0 0.0 0.0;
+}
+
+.menu-item {
+	
+}
+
+.menu-item:hover {
+	-fx-background-color: rgba(160, 160, 160, 0.3);
+}
+
+.menu-item:pressed {
+	-fx-background-color: rgba(110, 110, 110, 0.3);
+}
+
+.menu-item:focused {
+	-fx-background-color: rgba(110, 110, 110, 0.3);
+}
+
+.menu-item:selected {
+	-fx-background-color: rgba(160, 160, 160, 0.3);
+}
+
+.separator-menu-item {
+	-fx-background-color: rgba(155.0, 155.0, 155.0, 0.8);
+}
+
+.separator-menu-item {
+	-fx-color: rgba(0, 0, 0, 0.5);
+	-fx-background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * TextArea                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+.text-area {
+	
+}
+
+.text-area>.scroll-pane {
+	-fx-background-color: null;
+}
+
+.text-area>.scroll-pane>.scroll-bar:horizontal {
+	-fx-background-radius: 0 0 2 2;
+}
+
+.text-area>.scroll-pane>.scroll-bar:vertical {
+	-fx-background-radius: 0 2 2 0;
+}
+
+.text-area>.scroll-pane>.corner {
+	-fx-background-radius: 0 0 2 0;
+}
+
+.text-area .content {
+	
+}
+
+.text-area:focused .content {
+	-fx-background-color: -fx-faint-focus-color;
+	-fx-background-insets: 0, 0, 2;
+	-fx-background-radius: 2, 1, 0;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * PopupPrompt                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+.popup-prompt {
+	-fx-background-color: null;
+}
+
+.popup-prompt:hover {
+	-fx-background-color: null;
+}
+
+.popup-prompt:pressed {
+	-fx-background-color: null;
+}
+
+.popup-prompt:focused {
+	-fx-background-color: null;
+}
+
+.popup-prompt:selected {
+	-fx-background-color: null;
+}

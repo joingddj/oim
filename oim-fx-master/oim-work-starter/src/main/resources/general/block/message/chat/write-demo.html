@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>write</title>
+    <link rel="stylesheet" href="common/css/lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="common/css/base.css">
+    <link rel="stylesheet" href="write/css/layout.css">
+    <script src="common/js/Base.js"></script>
+    <script src="write/js/view/WriteView.js"></script>
+    <script src="write/js/Main.js"></script>
+    <style type="text/css">body {
+        white-space: pre-line;
+    }</style>
+</head>
+<body contenteditable="true">
+<button onclick="insertAtCursorHtml()">hhhhh</button>
+</body>
+<script>
+    var text = '<img src="file:/E:/Workspaces/Own/gitblit/oim-fx/oim-element-face/target/classes/com/onlyxiahui/oim/face/emoji/72x72/1f387.png" title="烟花" value="emoji,🎇" path="file:/E:/Workspaces/Own/gitblit/oim-fx/oim-element-face/target/classes/com/onlyxiahui/oim/face/emoji/72x72/1f387.png" name="face" style="width:28.0px;height:28.0px;" alt="烟花"/><img src="file:/E:/Workspaces/Own/gitblit/oim-fx/oim-element-face/target/classes/com/onlyxiahui/oim/face/emoji/72x72/1f387.png" title="烟花" value="emoji,🎇" path="file:/E:/Workspaces/Own/gitblit/oim-fx/oim-element-face/target/classes/com/onlyxiahui/oim/face/emoji/72x72/1f387.png" name="face" style="width:28.0px;height:28.0px;" alt="烟花"/><img src="file:/E:/Workspaces/Own/gitblit/oim-fx/oim-element-face/target/classes/com/onlyxiahui/oim/face/emoji/72x72/1f387.png" title="烟花" value="emoji,🎇" path="file:/E:/Workspaces/Own/gitblit/oim-fx/oim-element-face/target/classes/com/onlyxiahui/oim/face/emoji/72x72/1f387.png" name="face" style="width:28.0px;height:28.0px;" alt="烟花"/><img src="file:/E:/Workspaces/Own/gitblit/oim-fx/oim-element-face/target/classes/com/onlyxiahui/oim/face/emoji/72x72/1f387.png" title="烟花" value="emoji,🎇" path="file:/E:/Workspaces/Own/gitblit/oim-fx/oim-element-face/target/classes/com/onlyxiahui/oim/face/emoji/72x72/1f387.png" name="face" style="width:28.0px;height:28.0px;" alt="烟花"/>';
+
+    function insertAtCursorHtml() {
+        webBridge.insertAtCursorHtml(text);
+    }
+
+</script>
+</html>

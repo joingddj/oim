@@ -1,0 +1,33 @@
+.font-icon-button {
+	-fx-background-color: null;
+	-fx-background-radius: 3;
+}
+
+.font-icon-button:focused {
+	-fx-background-color: rgba(153, 153, 153, 0.5);
+}
+
+.font-icon-button:hover {
+	-fx-background-color: rgba(160, 160, 160, 0.5);
+}
+
+.font-icon-button:pressed {
+	-fx-background-color: rgba(120, 120, 120, 0.5);
+}
+
+/**********************/
+.font-icon-button>.icon-text {
+	-fx-fill: -fx-outer-border;
+}
+
+.font-icon-button:focused>.icon-text {
+	-fx-fill: -fx-selection-bar;
+}
+
+.font-icon-button:hover>.icon-text {
+	-fx-fill: -fx-hover-base;
+}
+
+.font-icon-button:pressed>.icon-text {
+	-fx-fill: -fx-pressed-base;
+}

@@ -1,0 +1,16 @@
+/**********************/
+.font-icon-text {
+	-fx-fill: -fx-outer-border;
+}
+
+.font-icon-text:focused {
+	-fx-fill: -fx-selection-bar;
+}
+
+.font-icon-text:hover {
+	-fx-fill: -fx-hover-base;
+}
+
+.font-icon-text:pressed {
+	-fx-fill: -fx-pressed-base;
+}

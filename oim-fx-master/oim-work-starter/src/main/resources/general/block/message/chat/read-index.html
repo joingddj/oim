@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>read</title>
+    <link rel="stylesheet" href="common/css/lib/fontawesome/css/all.css">
+    <link rel="stylesheet" href="common/css/base.css">
+    <link rel="stylesheet" href="read/css/layout.css">
+    <link rel="stylesheet" href="read/css/read.css">
+    <script src="common/js/Base.js"></script>
+    <script src="read/js/message/MessageBuilder.js"></script>
+    <script src="read/js/view/ReadView.js"></script>
+    <script src="read/js/app/AppBridge.js"></script>
+    <script src="read/js/Main.js"></script>
+</head>
+<body>
+<div id="prompt-view" class="prompt-message">
+<div id="prompt-view-chat" ></div>
+<div id="prompt-view-at" ></div>
+<div id="prompt-view-text" ></div>
+</div>
+<div id="message-scroll" class="outer message-list" onscroll="readView.handleScroll(event)">
+	<div id="message-list" class="inner"></div>
+</div>
+
+<div style="display: none">
+    <img id="file-icon-audio" src="read/images/file/audio@2x.png" height="80" width="80"/>
+    <img id="file-icon-code" src="read/images/file/code@2x.png" height="80" width="80"/>
+    <img id="file-icon-default" src="read/images/file/default@2x.png" height="80" width="80"/>
+    <img id="file-icon-excel" src="read/images/file/excel@2x.png" height="80" width="80"/>
+    <img id="file-icon-exe" src="read/images/file/exe@2x.png" height="80" width="80"/>
+    <img id="file-icon-floder" src="read/images/file/floder@2x.png" height="80" width="82"/>
+    <img id="file-icon-icon_top_ground_40" src="read/images/file/icon_top_ground_40@2x.png" height="80" width="80"/>
+    <img id="file-icon-online_tip_groud" src="read/images/file/online_tip_groud@2x.png" height="32" width="66"/>
+    <img id="file-icon-pdf" src="read/images/file/pdf@2x.png" height="80" width="80"/>
+    <img id="file-icon-pic" src="read/images/file/pic@2x.png" height="80" width="80"/>
+    <img id="file-icon-pic_psd" src="read/images/file/pic_psd@2x.png" height="80" width="80"/>
+    <img id="file-icon-ppt" src="read/images/file/ppt@2x.png" height="82" width="80"/>
+    <img id="file-icon-text" src="read/images/file/text@2x.png" height="80" width="80"/>
+    <img id="file-icon-video" src="read/images/file/video@2x.png" height="80" width="80"/>
+    <img id="file-icon-word" src="read/images/file/word@2x.png" height="80" width="80"/>
+    <img id="file-icon-zip" src="read/images/file/zip@2x.png" height="80" width="80"/>
+</div>
+</body>
+</html>
+
+

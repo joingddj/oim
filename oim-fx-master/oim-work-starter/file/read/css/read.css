@@ -1,0 +1,375 @@
+/*网站基本定义*/
+div, form, img, ul, ol, li, dl, dt, dd, p, tr, td, input, body, strong, span, pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+img {
+    border: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+em, i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+.del_float {
+    clear: both;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+a, area {
+    blr: expression(this.onFocus=this.blur());
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+body {
+    font-family: "Microsoft YaHei", Roboto, sans-serif, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    height: auto;
+    clear: both;
+    color: #666;
+    background: #fff;
+    background-size: cover;
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+.item:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.item {
+    *zoom: 1;
+}
+
+/*网站基本定义*/
+.message-time {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 50%
+}
+
+.message-time .content {
+    display: inline-block;
+    font-size: 12px;
+    padding: 1px 8px;
+/ / color: #b2b2b2;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+
+    background: #c6c6c6;
+    color: #fff;
+}
+
+
+.message {
+    margin-bottom: 16px;
+    float: left;
+    width: 100%;
+    padding: 6px 15px;
+}
+
+.message .avatar {
+    width: 40px;
+    height: 40px;
+    float: left;
+    cursor: pointer;
+    /*border-radius: 2px;*/
+    /*-moz-border-radius: 2px;*/
+    /*-webkit-border-radius: 2px;*/
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%
+}
+
+.message .nickname {
+    font-weight: 400;
+    padding-left: 10px;
+    font-size: 12px;
+    height: 22px;
+    line-height: 24px;
+    color: #4f4f4f;
+    width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal
+}
+
+.message .content {
+    overflow: hidden
+}
+
+.message.right {
+    float: right;
+    text-align: right;
+    clear: right
+}
+
+.message.right .avatar {
+    float: right
+}
+
+.message.right .content {
+    overflow: hidden
+}
+
+.message.first {
+    margin-top: 10px
+}
+
+
+.bubble {
+    max-width: 500px;
+    min-height: 1em;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin: 0 10px;
+    color: #000000;
+}
+
+.bubble.bubble_default {
+    background-color: rgba(125, 194, 255, 0.5);
+}
+
+.bubble:after, .bubble:before {
+    position: absolute;
+    top: 14px;
+    border: 6px solid transparent;
+    content: " "
+}
+
+.bubble.left:after, .bubble.left:before {
+    right: 100%
+}
+
+.bubble.left:after {
+    border-right-color: rgba(125, 194, 255, 0.5);
+    border-right-width: 4px
+}
+
+.bubble.right:after, .bubble.right:before {
+    left: 100%
+}
+
+.bubble.right:after {
+    border-left-color: #fff
+}
+
+.bubble.bubble_primary {
+    background-color: #b2e281;
+}
+
+.bubble.bubble_primary.left:after {
+    border-right-color: #b2e281;
+    border-right-width: 4px
+}
+
+.bubble.bubble_primary.right.arrow_primary:before, .bubble.bubble_primary.right:after {
+    border-left-color: #b2e281;
+    border-left-width: 4px;
+}
+
+.bubble_cont {
+    word-wrap: break-word;
+    word-break: break-all;
+    min-height: 25px
+}
+
+.bubble_cont .plain {
+    padding: 9px 9px;
+    user-select: text;
+    /* Mozilla-specific values */
+    -moz-user-select: text;
+    /* WebKit-specific values */
+    -webkit-user-select: text;
+    /* Microsoft-specific values */
+    -ms-user-select: text;
+    white-space: pre-line;
+}
+
+/*选中的是蓝色背景，白色的字体的段落*/
+.plain::selection {
+    color: white;
+    background-color: blue;
+}
+
+.bubble_cont .action-icon {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -11px;
+    margin-right: 9px;
+}
+
+.bubble_cont .icon-fail {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ff4016;
+}
+
+.bubble_cont .icon-loading {
+    font-size: 24px;
+    color: #18d27d;
+}
+
+
+/** voice **/
+.voice i {
+    float: right
+}
+
+.right .voice .duration {
+    left: -80px;
+    text-align: right
+}
+
+/** video **/
+.video {
+    position: relative;
+}
+
+.video img {
+    max-width: 200px;
+    max-height: 150px
+}
+
+.video .oim_chat_paly {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -27px;
+    margin-left: -27px
+}
+
+.video .loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    filter: alpha(opacity=50);
+    -moz-opacity: .5;
+    -khtml-opacity: .5;
+    opacity: .5
+}
+
+
+.video .loading img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -8px;
+    margin-top: -8px
+}
+
+/** face **/
+.face {
+    height: 24px;
+    width: 24px;
+}
+
+/** attach **/
+.attach {
+    padding: 10px;
+    background-color: #fff;
+    min-height: 75px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 2px;
+    position: relative
+}
+
+.attach:after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -13px;
+    z-index: 99;
+    border: 7px solid transparent;
+    border-left-color: #fff
+}
+
+.attach_bd .cover {
+    display: table-cell;
+    padding-right: 10px
+}
+
+.attach_bd .cont {
+    display: table-cell;
+    vertical-align: top
+}
+
+.attach_bd .cont .title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    max-width: 200px
+}
+
+.attach_bd .cont .opr {
+    margin-top: 20px
+}
+
+.attach_bd .cont .opr a {
+    color: #35ac2f;
+    text-decoration: none
+}
+
+.cover img {
+    height: 65px;
+    width: 65px;
+}
+
+.download {
+    cursor: pointer;
+    color: #00b0ff;
+}

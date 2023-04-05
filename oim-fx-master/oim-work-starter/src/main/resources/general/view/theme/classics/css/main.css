@@ -1,0 +1,32 @@
+/******************************************************************************
+ *                                                                            *
+ * TextField                                                                  *
+ *                                                                            *
+ ******************************************************************************/
+.search-text-field {
+	-fx-background-radius: 3;
+	-fx-border-color: null;
+	-fx-border-radius: 3;
+	-fx-border-width: 0.5;
+}
+
+.search-text-field:focused {
+	-fx-background-radius: 3;
+	-fx-border-color: #4e8fe2;
+	-fx-border-radius: 3;
+	-fx-border-width: 0.5;
+}
+
+.search-text-field:hover {
+	-fx-background-radius: 3;
+	-fx-border-color: #47c6f9;
+	-fx-border-radius: 3;
+	-fx-border-width: 0.5;
+}
+
+.search-text-field:disabled {
+	-fx-background-radius: 3;
+	-fx-border-color: #ced3d8;
+	-fx-border-radius: 3;
+	-fx-border-width: 0.5;
+}

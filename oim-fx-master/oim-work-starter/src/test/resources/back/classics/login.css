@@ -1,0 +1,359 @@
+/******************************************************************************
+ *                                                                            *
+ * WindowButton                                                               *
+ *                                                                            *
+ ******************************************************************************/
+
+/**最小化**/
+.window-min {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-min>.image-view {
+	-fx-image: url("../images/common/window/window_min_light_normal.png");
+}
+
+.window-min:focused>.image-view {
+	-fx-image: url("../images/common/window/window_min_light_normal.png");
+}
+
+.window-min:hover>.image-view {
+	-fx-image: url("../images/common/window/window_min_light_hover.png");
+}
+
+.window-min:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_min_light_press.png");
+}
+
+/**最大化**/
+.window-max {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-max>.image-view {
+	-fx-image: url("../images/common/window/window_max_light_normal.png");
+}
+
+.window-max:focused>.image-view {
+	-fx-image: url("../images/common/window/window_max_light_normal.png");
+}
+
+.window-max:hover>.image-view {
+	-fx-image: url("../images/common/window/window_max_light_hover.png");
+}
+
+.window-max:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_max_light_press.png");
+}
+
+/**还原**/
+.window-restore {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-restore>.image-view {
+	-fx-image:
+		url("../images/common/window/window_restore_light_normal.png");
+}
+
+.window-restore:focused>.image-view {
+	-fx-image:
+		url("../images/common/window/window_restore_light_normal.png");
+}
+
+.window-restore:hover>.image-view {
+	-fx-image: url("../images/common/window/window_restore_light_hover.png");
+}
+
+.window-restore:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_restore_light_press.png");
+}
+
+/**关闭 */
+.window-close {
+	-fx-background-color: null;
+	-fx-background-radius: 0.0;
+}
+
+.window-close>.image-view {
+	-fx-image: url("../images/common/window/window_close_light_normal.png");
+}
+
+.window-close:focused>.image-view {
+	-fx-image: url("../images/common/window/window_close_light_normal.png");
+}
+
+.window-close:hover>.image-view {
+	-fx-image: url("../images/common/window/window_close_light_hover.png");
+}
+
+.window-close:pressed>.image-view {
+	-fx-image: url("../images/common/window/window_close_light_press.png");
+}
+
+/******************************************************************************
+ *                                                                            *
+ *settingButton                                                               *
+ *                                                                            *
+ ******************************************************************************/
+.setting-button>.image-view {
+	-fx-image: url("../images/login/btn_set_normal.png");
+}
+
+.setting-button:focused>.image-view {
+	-fx-image: url("../images/login/btn_set_normal.png");
+}
+
+.setting-button:hover>.image-view {
+	-fx-image: url("../images/login/btn_set_hover.png");
+}
+
+.setting-button:pressed>.image-view {
+	-fx-image: url("../images/login/btn_set_press.png");
+}
+
+/**************************************
+*input
+***************************************/
+.empty-text-input-field {
+	-fx-background-color: null;
+	-fx-border-color: null;
+}
+
+.empty-text-input-field:editable {
+	-fx-background-color: null;
+	-fx-border-color: null;
+}
+
+.empty-text-input-field:focused {
+	-fx-background-color: null;
+	-fx-border-color: null;
+}
+
+.empty-text-input-field:hover {
+	-fx-background-color: null;
+	-fx-border-color: null;
+}
+
+.empty-text-input-field:pressed {
+	-fx-background-color: null;
+	-fx-border-color: null;
+}
+
+/**
+ * 登录按钮
+ */
+.login-button {
+	-fx-background-color: -fx-accent;
+	-fx-background-radius: 3;
+	-fx-font-size: 16px;
+	-fx-text-fill: ladder(-fx-accent, -fx-light-text-color 60%, -fx-dark-text-color 46%,
+		-fx-dark-text-color 59%, -fx-mid-text-color 45%)
+}
+
+.login-button:focused {
+	-fx-background-color: derive(-fx-accent, -50%);
+	-fx-text-fill: ladder(derive(-fx-accent, -50%), -fx-light-text-color 60%,
+		-fx-dark-text-color 46%, -fx-dark-text-color 59%, -fx-mid-text-color
+		45%)
+}
+
+.login-button:hover {
+	-fx-background-color: derive(-fx-accent, -50%);
+	-fx-text-fill: ladder(derive(-fx-accent, -50%), -fx-light-text-color 60%,
+		-fx-dark-text-color 46%, -fx-dark-text-color 59%, -fx-mid-text-color
+		45%)
+}
+
+.login-button:pressed {
+	-fx-background-color: derive(-fx-accent, -25%);
+	-fx-text-fill: ladder(derive(-fx-accent, -25%), -fx-light-text-color 60%,
+		-fx-dark-text-color 46%, -fx-dark-text-color 59%, -fx-mid-text-color
+		45%)
+}
+
+.status-button {
+	-fx-border-color: null;
+}
+
+.status-button:hover {
+	-fx-border-color: #888888;
+	-fx-border-radius: 3;
+}
+
+.status-button:pressed {
+	-fx-border-color: #888888;
+	-fx-border-radius: 3;
+}
+
+/**************************************
+*account-button
+***************************************/
+.account-button>.image-view {
+	-fx-image: url("../images/login/login_inputbtn_normal.png");
+}
+
+.account-button:focused>.image-view {
+	-fx-image: url("../images/login/login_inputbtn_normal.png");
+}
+
+.account-button:hover>.image-view {
+	-fx-image: url("../images/login/login_inputbtn_highlight.png");
+}
+
+.account-button:pressed>.image-view {
+	-fx-image: url("../images/login/login_inputbtn_down.png");
+}
+
+/**************************************
+*password-button
+***************************************/
+.password-button>.image-view {
+	-fx-image: url("../images/login/keyboard_normal.png");
+}
+
+.password-button:focused>.image-view {
+	-fx-image: url("../images/login/keyboard_normal.png");
+}
+
+.password-button:hover>.image-view {
+	-fx-image: url("../images/login/keyboard_hover.png");
+}
+
+.password-button:pressed>.image-view {
+	-fx-image: url("../images/login/keyboard_down.png");
+}
+
+/**************************************
+*input-bottom
+***************************************/
+.input-bottom {
+	-fx-background-color: #b3b3b3;
+}
+
+.input-bottom:editable {
+	-fx-background-color: #05bafb;
+}
+
+.input-bottom:focused {
+	-fx-background-color: #05bafb;
+}
+
+.input-bottom:hover {
+	-fx-background-color: #05bafb;
+}
+
+.input-bottom:pressed {
+	-fx-background-color: #05bafb;
+}
+
+/******************************************************************************
+ *                                                                            *
+ * ComboBox                                                                   *
+ *                                                                            *
+ ******************************************************************************/
+.combo-box-base {
+	-fx-padding: 0;
+}
+
+.combo-box-base {
+	-fx-background-color: null;
+}
+
+.combo-box-base:showing {
+	-fx-color: -fx-pressed-base;
+}
+
+.combo-box-base:focused {
+	-fx-background-color: null;
+}
+
+.combo-box-base:editable:focused {
+	-fx-background-color: null;
+}
+
+.combo-box-base:editable>.arrow-button {
+	-fx-background-color: null;
+}
+
+.combo-box-base:hover, .combo-box-base:editable>.arrow-button:hover {
+	-fx-color: -fx-hover-base;
+}
+
+.combo-box-base>.arrow-button>.arrow {
+	
+}
+
+.combo-box-base>.arrow-button {
+	-fx-background-color: transparent;
+}
+
+.combo-box-base:editable>.arrow-button {
+	-fx-background-color: null;
+}
+
+.combo-box-base:editable:focused>.arrow-button {
+	-fx-background-color: -fx-faint-focus-color;
+}
+
+.combo-box-base:editable>.text-field {
+	-fx-background-color: null;
+}
+
+.combo-box-base:editable>.text-field:focused {
+	-fx-background-color: null;
+}
+
+.combo-box-base:editable:focused>.text-field {
+	-fx-background-color: null;
+}
+
+/* 
+.combo-box-base {
+	-fx-background-color: null;
+}
+
+.combo-box-base:focused {
+	-fx-background-color: null;
+}
+
+.combo-box-base:hover {
+	-fx-background-color: null;
+}
+
+.combo-box-base:pressed {
+	-fx-background-color: null;
+}
+
+.combo-box-base>.text {
+	-fx-border-color: #000000;
+	-fx-border-width: 1.0px;
+}
+
+.combo-box-base:focused>.text {
+	-fx-border-color: #000000;
+	-fx-border-width: 1.0px;
+}
+
+.combo-box {
+	-fx-background-color: null;
+}
+
+.combo-box>.text-field {
+	-fx-background-color: null;
+}
+
+.combo-box:focused {
+	-fx-background-color: null;
+}
+
+.combo-box:editable {
+	-fx-background-color: null;
+}
+
+.combo-box:focused>.text-field {
+	-fx-background-color: null;
+} */

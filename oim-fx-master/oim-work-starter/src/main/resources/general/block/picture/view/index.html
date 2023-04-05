@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viewer</title>
+    <link rel="stylesheet" href="js/lib/viewer/viewer.min.css">
+    <script src="js/lib/viewer/viewer.min.js"></script>
+</head>
+<body>
+<div id="show" style="display: none"></div>
+</body>
+<script>
+    var viewer;
+    window.addEventListener('DOMContentLoaded', function () {
+        var node = document.getElementById('show');
+        viewer = new Viewer(node, {
+            hidden: function () {
+                // viewer.destroy();
+            },
+            backdrop: 'static',
+            fullscreen: true,
+            button: false,
+        });
+    });
+
+    function WebBridge() {
+        var own = this;
+        own.setImageHtml = function (id, html) {
+            var node = document.getElementById('show');
+            node.innerHTML = '';
+            var element = document.createElement('div');
+            element.innerHTML = html;
+            node.appendChild(element);
+
+
+            viewer.update();
+            var v = document.getElementById(id);
+            v.click();
+        }
+    }
+
+    window.webBridge = new WebBridge();
+</script>
+</html>

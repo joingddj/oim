@@ -1,0 +1,196 @@
+/*网站基本定义*/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+body {
+    font-family: "Microsoft YaHei", Roboto, sans-serif, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+}
+
+body {
+    perspective: 800px;
+}
+
+body {
+    background-color: transparent;
+}
+
+
+a, button, input, textarea {
+    outline: 0
+}
+
+body, dd, dl, fieldset, h1, h2, h3, h4, h5, h6, ol, p, textarea, ul {
+    margin: 0
+}
+
+fieldset, input, legend, textarea {
+    padding: 0
+}
+
+ol, ul {
+    padding-left: 0;
+    list-style-type: none
+}
+
+a img, fieldset {
+    border: 0
+}
+
+audio, canvas, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden] {
+    display: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 0
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    cursor: pointer;
+    -webkit-appearance: button
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=search] {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: none
+}
+
+input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {
+    box-shadow: inset 0 0 0 1000px #fff;
+    -moz-box-shadow: inset 0 0 0 1000px #fff;
+    -webkit-box-shadow: inset 0 0 0 1000px #fff
+}
+
+select {
+    border-radius: 0;
+    -webkit-border-radius: 0
+}
+
+
+pre {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: pre-wrap;
+    word-break: normal
+}
+
+
+img {
+    border: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+em, i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+
+div, form, img, ul, ol, li, dl, dt, dd, p, tr, td, input, body, strong, span, pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body{
+	font-size: 14px;
+	vertical-align: middle;
+    max-width: 100%;
+}
+
+img{
+	vertical-align: middle;
+    max-width: 80%;
+}
+
+.at{
+	color: #2273ec;
+}
+
+.at:after{
+	content:"";
+	display:block;
+	/*这里也可以是背景图片，不建议透明图*/	
+	background-color: antiquewhite;
+	background-size:100%;
+}

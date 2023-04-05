@@ -1,0 +1,14 @@
+com.onlyxiahui.app.initializer.EnterInitializer=\
+com.oimchat.client.general.run.initializer.enter,\
+com.oimchat.client.platform.common.run.initializer.enter,\
+com.oimchat.client.platform.fx.run.initializer.enter\
+
+com.onlyxiahui.app.initializer.LaunchInitializer=\
+com.oimchat.client.general.run.initializer.launch,\
+com.oimchat.client.platform.common.run.initializer.launch,\
+com.oimchat.client.platform.fx.run.initializer.launch\
+
+com.onlyxiahui.app.initializer.StartInitializer=\
+com.oimchat.client.general.run.initializer.start,\
+com.oimchat.client.platform.common.run.initializer.start,\
+com.oimchat.client.platform.fx.run.initializer.start\

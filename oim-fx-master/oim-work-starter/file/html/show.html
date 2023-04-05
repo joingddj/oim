@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>read</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="css/show.css">
+    <script src="app/data/chat/Content.js"></script>
+    <script src="app/data/chat/Item.js"></script>
+    <script src="app/data/chat/Section.js"></script>
+    <script src="app/MessageWrap.js"></script>
+    <script src="app/MessageContentWrap.js"></script>
+    <script src="app/util/BaseUtil.js"></script>
+
+
+</head>
+<body>
+<style scoped>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #app {
+        width: 100%;
+        height: 100%;
+    }
+
+    .el-header {
+        background-color: #B3C0D1;
+        color: #333;
+        line-height: 60px;
+    }
+
+    .el-aside {
+        color: #333;
+        min-height: 100%;
+        position: relative;
+    }
+
+    .header, .footer {
+        position: absolute;
+
+        width: 100%;
+        background: #7bbd53;
+    }
+
+    .header {
+        height: 30px;
+        top: 0;
+    }
+
+    .footer {
+        height: 30px;
+        bottom: 0;
+    }
+
+    .center {
+        position: absolute;
+        top: 0px;
+        bottom: 30px;
+        width: 100%;
+    }
+
+</style>
+<template id="messageContentPane">
+    <div>
+
+    </div>
+</template>
+
+<div id="app">
+    <el-button type="success" v-on:click="onDelete" icon="el-icon-refresh">刷新项目</el-button>
+    <div ref="messageScrollPane"
+         class="only-full-pane outer"
+         style="overflow-y: auto;overflow-x: hidden"
+    >
+        <div class="inner">
+            <template v-for="message of messages">
+                <div :id="message.content.key" class="message">
+                    <dl :class="message.isOwn?'item right':'item left'">
+                        <p v-if="message.timeVisible" class="time"><i>{{ message.timeText }}</i></p>
+                        <dt>
+                            <img :src="message.avatar" :title="message.name" onselectstart="return false;" alt="">
+                        </dt>
+                        <dd>
+                            <span v-if="message.nameVisible && !message.isOwn" class="name">{{ message.name }}</span>
+                            <div class="content">
+                                <i class="arrow"></i>
+                                <div ref="contentPane" style="padding: 0">
+                                    <template v-if="hasSections" v-for="(section,index) of message.content.sections">
+                                        <template v-if="!hasItems(section)&&index>0">
+                                            <br>
+                                        </template>
+                                        <div>
+                                            <template v-if="hasItems(section)" v-for="item of section.items">
+                                                <template v-if="'text'===item.type">
+                                                    <label v-html="item.value"></label>
+                                                </template>
+                                                <template v-else-if="'image'===item.type">
+                                                    <a rel="image_group" href="javascript:void(0);">
+                                                        <img chat="chat_image"
+                                                             :data-source="item.value.url"
+                                                             :src="item.value.url">
+                                                    </a>
+                                                </template>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let w = window.location;
+    let baseUrl = '';
+    let api = {};
+    let promptBox = {};
+
+    promptBox.message = function (text) {
+    };
+    promptBox.success = function (text) {
+    };
+    promptBox.warning = function (text) {
+    };
+    promptBox.error = function (text) {
+    };
+</script>
+<script src="js/vue/vue.min.js"></script>
+<script src="js/vue/vue-router.js"></script>
+<script src="js/element-ui/lib/index.js"></script>
+<script src="views/app.js"></script>
+
+<style>
+    .only-full-pane {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+</style>
+</html>
